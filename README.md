@@ -8,6 +8,9 @@ a java application for getting and putting object from amazon s3
 2. ide(eclipse,vscode etc)
 
 # How to Build and Excute
+
+   download/clone the repository, extract it, open the folder in eclipse/vscode  
+   the run the Main.java class of main package
    
    compile and excute the Main class of main pacakage
    
