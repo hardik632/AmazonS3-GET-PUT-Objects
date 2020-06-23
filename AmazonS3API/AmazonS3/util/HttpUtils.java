@@ -33,10 +33,12 @@ public class HttpUtils {
                 is = connection.getErrorStream();
             }
             BufferedReader bd = new BufferedReader(new InputStreamReader(is));
-            String response = new String();
-            int i;
-            while ((i = bd.read()) != -1)
-                response += (char) i;
+            String line;
+            StringBuffer response = new StringBuffer();
+            while ((line = bd.readLine()) != null) {
+                response.append(line);
+                //response.append('\r');
+            }
             bd.close();
             return response.toString();
         } catch (Exception e) {
