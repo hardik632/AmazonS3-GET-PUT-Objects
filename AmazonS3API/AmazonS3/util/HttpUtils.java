@@ -36,7 +36,7 @@ public class HttpUtils {
             String line;
             StringBuffer response = new StringBuffer();
             while ((line = bd.readLine()) != null) {
-                response.append(line);
+                response.append(line).append('\n');
                 //response.append('\r');
             }
             bd.close();
