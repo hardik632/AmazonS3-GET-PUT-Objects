@@ -4,7 +4,7 @@ a java application for getting and putting object from amazon s3
 
 # Requirements
 
-1. java jdk
+1. java jdk 11
 2. ide(eclipse,vscode etc)
 
 # How to Build and Excute
